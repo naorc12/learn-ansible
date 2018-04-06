@@ -1,7 +1,6 @@
 # Written Resources
 
-Sorry nothing here yet :(
 
 Author | Article | Level | Comments
 :------ |:------|:--------:|:--------:
-Ploni Almoni | [Subject](http://name) | Beginner | |
+Arie Bregman | [Write and run your first playbook](http://abregman.com/2015/12/25/ansible-write-and-run-your-first-playbook) | Beginner | |

@@ -7,7 +7,20 @@ Note: similar questions can be found in [interview questions](https://github.com
 
 ## Ansible newbie
 
-- [ ] **Components**
+- [ ] **Core Components**
   - [ ] What is a task?
   - [ ] What is a play?
   - [ ] What is a playbook?
+
+- [ ] **Modules**
+  - [ ] What is a module?
+  - [ ] In what language modules are written?
+  - [ ] How do you display the list of existing modules? (CLI)
+
+- [ ] **Facts**
+  - [ ] What is a fact?
+  - [ ] How do you display all the facts available on a certain host?
+  - [ ] How do you set a fact of your own?
+
+- [ ] **Including and Importing**
+  - [ ] What is the main difference between including and importing?
