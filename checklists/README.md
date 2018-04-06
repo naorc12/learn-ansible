@@ -17,10 +17,21 @@ Note: similar questions can be found in [interview questions](https://github.com
   - [ ] In what language modules are written?
   - [ ] How do you display the list of existing modules? (CLI)
 
-- [ ] **Facts**
-  - [ ] What is a fact?
+- [ ] **Variables**
+  - [ ] How variables are defined and used?
+  - [ ] What is Jinja2?
+  - [ ] What are facts?
   - [ ] How do you display all the facts available on a certain host?
   - [ ] How do you set a fact of your own?
+  - [ ] How do you reference facts of another server?
 
 - [ ] **Including and Importing**
   - [ ] What is the main difference between including and importing?
+
+## Ansible intermediate
+
+- [ ] **Fact caching**
+  - [ ] What is it?
+  - [ ] When is it useful to use?
+  - [ ] What cache plugins are available?
+
