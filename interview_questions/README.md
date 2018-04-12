@@ -73,3 +73,18 @@ If your answer is "this will fail" then you are right :)
         when: mario_f.stat.exists
 ```
 
+* Write a playbook to deploy the file '/etc/system_info' on all hosts except for controllers group, with the following content
+
+  `I'm <HOSTNAME> and my operating system is <OS>`
+  
+  replace <hostname> and  <OS> with the actual data for the specific host you are running on
+
+```
+- name: Deploy /tmp/system_info file
+  hosts: all:!controllers
+  tasks: 
+      - name: Deploy /tmp/system_info
+        template:
+            src: system_info.j2 
+            dest: /tmp/system_info
+```
