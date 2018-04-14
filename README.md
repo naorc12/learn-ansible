@@ -12,3 +12,4 @@ This is the place to learn about Ansible.
   5. [Exercises](https://github.com/devinpractice/learn-ansible/tree/master/exercises/README.md)
   6. [Checklists](https://github.com/devinpractice/learn-ansible/tree/master/checklists/README.md)
   7. [Cheat Sheets](https://github.com/bregman-arie/learn-ansible/tree/cheatsheets/README.md)
+  8. [Filters](https://github.com/bregman-arie/learn-ansible/tree/filters/README.md)

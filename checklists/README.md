@@ -37,6 +37,9 @@ Note: similar questions can be found in [interview questions](https://github.com
 - [ ] **Privileges**
   - [ ] Become
 
+- [ ] **Tags**
+  - [ ] What tags are used for?
+
 - [ ] **Handlers**
   - [ ] How are they different from tasks?
   - [ ] Listen to topics

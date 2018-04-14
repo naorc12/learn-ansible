@@ -88,3 +88,72 @@ If your answer is "this will fail" then you are right :)
             src: system_info.j2 
             dest: /tmp/system_info
 ```
+
+* How would you change the output format of Ansible execution to display only the name of the tasks?
+
+```
+The answer is "callback plugin". It doesn't let you to change only what you see but basically do everything you want
+based on different events in Ansible. So a similar question might be: "how would you log everything to a file?" and the
+answer would still be a callback plugin.
+
+Here some of the main points you need to know about callback plugins:
+
+- There are several callback plugins in Ansible tree
+- To enable callback plugin, include it in ansible.cfg like this:
+  callback_whitelist = my_cool_plugin
+- To change the default stdout of Ansible execution, modify ansible.cfg to include
+  stdout_callback = my_new_stdout_callback_plugin
+```
+
+* File '/tmp/exercise' includes the following content
+
+Goku = 9001
+Vegeta = 5200
+Trunks = 6000
+Gotenks = 32
+
+With one task, switch the content to:
+
+Goku = 9001
+Vegeta = 250
+Trunks = 40
+Gotenks = 32
+
+```
+- name: Change saiyans level
+  lineinfile:
+      dest: /tmp/exercise
+      regexp: "{{ item.regexp }}"
+      line: "{{ item.line }}"
+  with_items:
+      - { regexp: '^Vegeta', line: 'Vegeta = 250' }
+      - { regexp: '^Trunks', line: 'Trunks = 40' }
+```
+
+* You have the following play
+
+- name: Print variable    
+  hosts: localhost    
+  tasks:         
+      - name: Print test variable
+        debug:    
+            msg: "{{ test }}"
+
+And you run the following command
+
+ansible-playbook -e test="test 1 2 3" debug.yaml
+
+What would be the output of the test variable?
+
+test 1 2 3
+test
+empty string
+the variable is not defined
+
+```
+The answer is 'test'.
+
+This one is tricky and it checks whether you understand shell and Ansible.
+In this case, since the command is first processed by the shell, whatever in the
+quotes and after a backslash or space will be ignored.
+```
